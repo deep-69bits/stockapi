@@ -87,8 +87,8 @@ const SideBar = ({ data }) => {
                                     <h4 className='text-[9px] opacity-40'>Year {year}</h4>
                                     <hr />
                                     <ul>
-                                        {transcripts.map(item => (
-                                             <Link key={item.id} href={'/earning/' + item.transcriptid} className='flex justify-between items-center cursor-pointer opacity-50 text-[12px] py-2 '>
+                                        {transcripts.map((item,it) => (
+                                             <Link key={it} href={'/earning/' + item.transcriptid} className='flex justify-between items-center cursor-pointer opacity-50 text-[12px] py-2 '>
                                              <span>
                                                  {item.code}, {item.quator} {item.year} Earnings Calls
                                              </span>
