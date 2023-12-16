@@ -3,6 +3,22 @@ import { AudioOutlined } from '@ant-design/icons';
 import Link from 'next/link';
 
 const SideBar = ({ data }) => {
+    // Grouping transcripts by year
+    const groupedTranscripts = data.reduce((acc, transcript) => {
+        const year = transcript.year;
+        acc[year] = acc[year] || [];
+        acc[year].push(transcript);
+        return acc;
+    }, {});
+
+    // Creating an array of objects with year as key and transcripts as value
+    const resultArray = Object.keys(groupedTranscripts)
+        .sort((a, b) => b - a) // Sorting years in descending order
+        .map(year => ({
+            [`${year}`]: groupedTranscripts[year]
+        }));
+
+  
     return (
         <div className='mr-5 w-1/4 shadow-xl min-h-screen bg-white text-black '>
 
@@ -62,26 +78,30 @@ const SideBar = ({ data }) => {
                     </div>
 
                     <div className='my-5'>
+                        {resultArray.map(group => {
+                            const year = Object.keys(group)[0];
+                            const transcripts = group[year];
 
-                        <h4 className='text-[9px] opacity-40'>Transcripts</h4>
-                        <hr />
-                        <ul>
-                            {
-                                data.map((item, index) => {
-                                    return (
-                                        <Link key={index} href={'/earning/'+item.transcriptid} className='flex justify-between items-center cursor-pointer opacity-50 text-[12px] py-2 '>
-                                            <span>
-                                                {item.code}, {item.quator} {item.year} Earnings Calls
-                                            </span>
-                                            <span>
-                                                {item.date}
-                                            </span>
-                                        </Link>
-                                    )
-                                })
-                            }
-                           
-                        </ul>
+                            return (
+                                <div key={year} className='my-5'>
+                                    <h4 className='text-[9px] opacity-40'>Year {year}</h4>
+                                    <hr />
+                                    <ul>
+                                        {transcripts.map(item => (
+                                             <Link key={item.id} href={'/earning/' + item.transcriptid} className='flex justify-between items-center cursor-pointer opacity-50 text-[12px] py-2 '>
+                                             <span>
+                                                 {item.code}, {item.quator} {item.year} Earnings Calls
+                                             </span>
+                                             <span>
+                                                 {item.date}
+                                             </span>
+                                         </Link>
+                                        ))}
+                                    </ul>
+                                </div>
+                            );
+                        })}
+                        
                     </div>
                 </div>
             </div>

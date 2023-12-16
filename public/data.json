@@ -3,82 +3,55 @@
         "transcriptid":"1",
         "name":"Tata Consultancy Services Ltd",
         "code":"TCS",
-        "year":2022,
-        "quator":"Q1",
-        "date":"16/08/2022",
-        "transcript":"https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2021-22/q1/Management%20Commentary/Transcript%20of%20the%20Q1%202021-22%20Earnings%20Conference%20Call%20held%20at%202000%20hrs%20IST%20on%20Jul%208,%202021.pdf"
+        "year":2024,
+        "quator":"Q2",
+        "date":"16/08/2024",
+        "transcript":"https://stockinsights-in-filings.s3.ap-south-1.amazonaws.com/earnings-transcripts/TCS-Tata_Consultancy_Services_Ltd-Earnings-FY2024-Q2.pdf"
     },
     {
         "transcriptid":"2",
         "name":"Tata Consultancy Services Ltd",
         "code":"TCS",
         "year":2021,
-        "quator":"Q4",
+        "quator":"Q1",
         "date":"17/07/2021",
-        "transcript":"https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2020-21/q4/Management%20Commentary/Transcript%20of%20the%20Q4%202020-21%20Earnings%20Conference%20Call%20held%20at%202000%20hrs%20IST%20on%20Apr%2012,%202021.pdf"
+        "transcript":"https://stockinsights-in-filings.s3.ap-south-1.amazonaws.com/earnings-transcripts/TCS-Tata_Consultancy_Services_Ltd-Earnings-FY2021-Q1.pdf"
     },
     {
         "transcriptid":"3",
-        "name":"Tata Consultancy Services Ltd",
-        "code":"TCS",
-        "year":2021,
-        "quator":"Q3",
-        "date":"30/4/2021",
-        "transcript":"https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2020-21/q3/Management%20Commentary/Transcript%20of%20the%20Q3%202020-21%20Earnings%20Conference%20Call%20held%20at%202000%20hrs%20IST%20on%20Jan%208,%202021.pdf"
-    },
-    {
-        "transcriptid":"4",
-        "name":"Tata Consultancy Services Ltd",
-        "code":"TCS",
-        "year":2021,
-        "quator":"Q2",
-        "date":"26/10/2021",
-        "transcript":"https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2020-21/q2/Management%20Commentary/Transcript%20of%20the%20Q2%202020-21%20Earnings%20Conference%20Call%20held%20at%202000%20hrs%20IST%20on%20Oct%20%207,%202020.pdf"
-    },
-    {
-        "transcriptid":"5",
-        "name":"Tata Consultancy Services Ltd",
-        "code":"TCS",
-        "year":2021,
-        "quator":"Q1",
-        "date":"2/2/2021",
-        "transcript":"https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2020-21/q1/Management%20Commentary/Transcript%20of%20the%20Q1%202020-21%20Earnings%20Conference%20Call%20held%20at%202000%20hrs%20IST%20on%20July%209,%202020.pdf"
-    },
-    {
-        "transcriptid":"6",
         "name":"Reliance Industries Ltd",
         "code":"RELIANCE",
         "year":2024,
         "quator":"Q2",
         "date":"10/12/2024",
-        "transcript":"https://www.bseindia.com/xml-data/corpfiling/AttachLive/ef9baa21-923a-48ad-9fb7-2157af59ae16.pdf"
+        "transcript":"https://stockinsights-in-filings.s3.ap-south-1.amazonaws.com/earnings-transcripts/RELIANCE-Reliance_Industries_Ltd-Earnings-FY2024-Q2.pdf"
     },
     {
-        "transcriptid":"7",
+        "transcriptid":"4",
         "name":"Reliance Industries Ltd",
         "code":"RELIANCE",
         "year":2024,
         "quator":"Q1",
         "date":"24/1/2024",
-        "transcript":"https://www.bseindia.com/xml-data/corpfiling/AttachHis/f2fa506f-675b-46db-9f7b-26303a05d6b9.pdf"
+        "transcript":"https://stockinsights-in-filings.s3.ap-south-1.amazonaws.com/earnings-transcripts/RELIANCE-Reliance_Industries_Ltd-Earnings-FY2024-Q1.pdf"
     },
     {
-        "transcriptid":"8",
+        "transcriptid":"5",
         "name":"Reliance Industries Ltd",
         "code":"RELIANCE",
         "year":2023,
         "quator":"Q4",
         "date":"2/6/2023",
-        "transcript":"https://www.bseindia.com/xml-data/corpfiling/AttachHis/9c8c3f07-883a-476b-8fb2-8fe74078e9f5.pdf"
+        "transcript":"https://stockinsights-in-filings.s3.ap-south-1.amazonaws.com/earnings-transcripts/RELIANCE-Reliance_Industries_Ltd-Earnings-FY2023-Q4.pdf"
     },
     {
-        "transcriptid":"9",
+        "transcriptid":"6",
         "name":"Reliance Industries Ltd",
         "code":"RELIANCE",
         "year":2023,
         "quator":"Q3",
         "date":"30/8/2023",
-        "transcript":"https://www.bseindia.com/xml-data/corpfiling/AttachHis/dfb275bd-fd47-4a38-964e-21a67e26b3c2.pdf"
+        "transcript":"https://stockinsights-in-filings.s3.ap-south-1.amazonaws.com/earnings-transcripts/RELIANCE-Reliance_Industries_Ltd-Earnings-FY2023-Q3.pdf"
     },
     {
         "transcriptid":"10",
@@ -87,6 +60,6 @@
         "year":2023,
         "quator":"Q2",
         "date":"8/5/2023",
-        "transcript":"https://www.bseindia.com/xml-data/corpfiling/AttachHis/aa7a60c6-791d-4e59-94e6-9f94c3a506fc.pdf"
+        "transcript":"https://stockinsights-in-filings.s3.ap-south-1.amazonaws.com/earnings-transcripts/RELIANCE-Reliance_Industries_Ltd-Earnings-FY2023-Q2.pdf"
     }
 ]

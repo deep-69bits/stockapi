@@ -17,10 +17,10 @@ const Head = ({data}) => {
             <div>
                <ul className='flex text-sm  gap-x-4 mt-1'>
                  <li className='font-semibold opacity-40'>Following </li>
-                 <li > <span className='opacity-30'>NSE:</span> <span className='text-[#868686]'>EUREKAFO</span> </li>
-                 <li > <span className='opacity-30'>Market Cap:(11/16/23)</span> <span className='text-[#868686]'>$11.3 Billion</span> </li>
-                 <li > <span className='opacity-30'>Sector</span> <span className='text-[#868686]'>Apparel</span> </li>
-                 <li > <span className='opacity-30'>Industy</span> <span className='text-[#868686]'>Textiles & Apparel</span> </li>
+                 <li > <span className='opacity-30'>NSE:</span> <span className='text-[#868686]'>{ companyData? companyData.code:""}</span> </li>
+                 {/* <li > <span className='opacity-30'>Market Cap:(11/16/23)</span> <span className='text-[#868686]'>$11.3 Billion</span> </li> */}
+                 <li > <span className='opacity-30'>Date:</span> <span className='text-[#868686]'>{companyData? companyData.date:""}</span> </li>
+                 <li > <span className='opacity-30'>Quator</span> <span className='text-[#868686]'>{companyData? companyData.quator:""}</span> </li>
                </ul>
             </div>
         </div>
