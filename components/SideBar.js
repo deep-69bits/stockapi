@@ -6,7 +6,7 @@ const SideBar = ({ data }) => {
     const router = useRouter()
     const id = router.query.transcriptid
     // Grouping transcripts by year
-    const [show, setShow] = useState(true)
+    const [show, setShow] = useState(false)
     const groupedTranscripts = data.reduce((acc, transcript) => {
         const year = transcript.year;
         acc[year] = acc[year] || [];
@@ -33,7 +33,7 @@ const SideBar = ({ data }) => {
 
     return (
         <div>
-        <div className='mr-5 absolute   w-full  lg:block  z-50 lg:w-1/4 shadow-xl min-h-screen bg-white text-black '>
+        <div className='mr-5 absolute   w-full  lg:block  z-50 lg:w-1/4 shadow-xl min-h-screen  bg-white text-black '>
 
             <div className='flex items-center gap-x-2' >
                 <div onClick={() => { setShow(!show) }} className='ml-2 cursor-pointer w-[30px]'>
@@ -106,7 +106,7 @@ const SideBar = ({ data }) => {
                                     <hr />
                                     <ul>
                                         {transcripts.map((item, it) => (
-                                            <Link key={it} href={"/earning/" + item.transcriptid} className={ id==item.transcriptid?'flex justify-between items-center cursor-pointer hover:opacity-100 text-[12px] py-2':'flex hover:opacity-100 justify-between items-center cursor-pointer opacity-50 text-[12px] py-2 '}>
+                                            <Link key={it} href={'/earning/' + item.transcriptid} className={ item.transcriptid==id?"flex justify-between items-center cursor-pointer opacity-100 hover:opacity-100 text-[12px] py-2":'flex hover:opacity-100 justify-between items-center cursor-pointer opacity-50 text-[12px] py-2 '}>
                                                 <span>
                                                     {item.code}, {item.quator} {item.year} Earnings Calls
                                                 </span>
@@ -126,7 +126,7 @@ const SideBar = ({ data }) => {
 
         </div>
 
-        <div className='mr-5  hidden lg:block w-full    z-50 lg:w-1/4 shadow-xl min-h-screen bg-white text-black '>
+        <div className='mr-5  hidden    lg:block w-full lg:opacity-0   z-50 lg:w-1/4 shadow-xl   bg-white text-black '>
 
             <div className='flex items-center gap-x-2' >
                 <div onClick={() => { setShow(!show) }} className='ml-2 cursor-pointer w-[30px]'>
@@ -199,7 +199,7 @@ const SideBar = ({ data }) => {
                                     <hr />
                                     <ul>
                                         {transcripts.map((item, it) => (
-                                            <Link key={it} href={ "/earning/" + item.transcriptid} className={ id==item.transcriptid?'flex justify-between items-center cursor-pointer hover:opacity-100 text-[12px] py-2':'flex hover:opacity-100 justify-between items-center cursor-pointer opacity-50 text-[12px] py-2 '}>
+                                            <Link key={it} href={'/eaning/'  + item.transcriptid} className={ item.transcriptid==id?"flex justify-between items-center cursor-pointer opacity-100 hover:opacity-100 text-[12px] py-2":'flex hover:opacity-100 justify-between items-center cursor-pointer opacity-50 text-[12px] py-2 '}>
                                                 <span>
                                                     {item.code}, {item.quator} {item.year} Earnings Calls
                                                 </span>

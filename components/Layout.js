@@ -5,10 +5,10 @@ const Layout = ({children,data}) => {
   return (
     <div  className='bg-[#EEEEEE]'>
         <Head data={data}/>
-        <div className='flex'>
+        <div className='flex '>
           <SideBar data={data} />
-          <div>
-        {children}
+          <div className='w-3/4'>
+           {children}
           </div>
         </div>
     </div>

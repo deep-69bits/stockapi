@@ -6,7 +6,7 @@ const SideBar = ({ data }) => {
     const router = useRouter()
     const code = router.query.code
     let id = router.query.earning
-    const [show, setShow] = useState(true)
+    const [show, setShow] = useState(false)
     const groupedTranscripts = data.reduce((acc, transcript) => {
         const year = transcript.year;
         acc[year] = acc[year] || [];
